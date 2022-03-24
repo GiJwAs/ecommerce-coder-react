@@ -1,20 +1,36 @@
 import './App.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import React, {useState, useEffect} from 'react'
+
 import NavBar from './components/NavBar/NavBar'
+import ListProducts from './components/ListProducts/ListProducts';
+import Card from './components/Card/Card';
+import Container from '@mui/material/Container';
+
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const handleClose = (value) => {
+      setOpen(false);
+  };
+  
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+
+
+
   return (
+    //JSX
+    
     <div className="App">
-
-      <NavBar />
-      <ItemListContainer>
-        <p>Productos </p>
-
-      </ItemListContainer>
+     <NavBar />
+      {/* <NavBarClass /> */}
+      <Container className='container-general'> 
+        <ListProducts />
+      </Container>
     </div>
-
-
-          
   );
 }
 
