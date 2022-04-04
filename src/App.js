@@ -1,18 +1,15 @@
 import React from 'react';
-import './App.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
-import NavBar from './components/NavBar/NavBar'
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import CartProvider from './context/CartContext.js';
+import AppRouter from './routes/AppRouter.js';
 
+import './style.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <ItemListContainer />
-      <ItemDetailContainer id={3} />
-    </div>
+    <>
+      <CartProvider>
+        <AppRouter />
+      </CartProvider>
+    </>
   );
 }
-
-export default App;
