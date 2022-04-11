@@ -1,0 +1,14 @@
+.bg{
+    background-image: url(https://scontent.faep9-3.fna.fbcdn.net/v/t1.18169-9/13096234_1038875336179967_1338429381249187409_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=e3f864&_nc_ohc=D5ZrCIeyKy8AX_edyAU&_nc_ht=scontent.faep9-3.fna&oh=00_AT-5lhtoSEWcSVmsRURRFCM75oAYKMT57JNHJyOE8umhIA&oe=62789198);
+    background-size: cover;
+    width:100%;
+    background-position:center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+}
+.loading{
+    height: 470px;
+    margin-top:40px;
+    padding-top:50px;
+}
+
