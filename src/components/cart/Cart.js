@@ -4,17 +4,10 @@ import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
 import Form from '../Form/Form'
 
-
-
-
-
-
-
 function Cart() {
 
     const {cartList, borrarCarrito,borrarItem, totalPrice, handleShow} = useCartContext()
 
-    
     return (
         <div className="mb-4 mt-4 pt-4 pb-5">
             

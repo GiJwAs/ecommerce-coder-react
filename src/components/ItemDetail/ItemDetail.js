@@ -37,7 +37,7 @@ const ItemDetail = ({ producto }) => {
                 <Col><Card.Body>
                     <Card.Title className='detail-title'>{producto.title}</Card.Title>
                     <Card.Text >
-                        <h3 className="card-precio detail-precio">{producto.precio}</h3>
+                        <h3 className="card-precio">$ {producto.precio}</h3>
                         <h4 className="detail-texto">{producto.descripcion}</h4>
                     </Card.Text>
                     {!goCart ? (
